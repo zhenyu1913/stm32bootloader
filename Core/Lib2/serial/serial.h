@@ -9,7 +9,7 @@ typedef enum{
 	SERIAL_SENDING,
 }serial_state_t;
 
-#define buf_len 128
+#define buf_len 256
 
 typedef struct{
 	serial_state_t state;
