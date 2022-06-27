@@ -1,6 +1,7 @@
 #include "main.h"
 
-#include "../../Lib2/serial/serial.h"
+#include "serial.h"
+#include "app.h"
 
 serial_t uart_instance;
 serial_t* uart = &uart_instance;
@@ -22,5 +23,7 @@ void serial_tr_control(serial_t* serial,serial_tr_t tr){
 }
 
 void serial_receive_frame(serial_t* serial,uint8_t* buf,uint16_t len){
-
+	memcpy(var.uart_buf,buf,len);
+	var.uart_len = len;
+	var.uart_flag = 1;
 }

@@ -14,9 +14,7 @@ typedef struct{
 
 typedef struct{
 	uint8_t address[4];
-	uint8_t app_crc[2];
-	uint32_t app_len;
-}boot_config_t
+}boot_config_t;
 
 typedef struct{
 	uint16_t index;
@@ -31,11 +29,14 @@ typedef struct{
 #define PROTOCOL_VERSION 0x00
 #define DEVICE_TYPE 0x01
 
-#define APP_ADDRESS 0x1000
-#define CONFIG_ADDRESS 0xC00
+#define FLASH_LEN  (32*1024)
+
+#define APP_ADDRESS (4*1024)
+#define CONFIG_ADDRESS (FLASH_LEN - 2*1024)
 
 #define FRAME_DATA_LEN 128
 
+#define APP_BOOT_DELAY 3000
 
 typedef enum{
 	BOOT_CMD_DATA,
@@ -52,9 +53,19 @@ typedef struct{
 	boot_state_t boot_state;
 	uint8_t flash_buf[FRAME_DATA_LEN];
 	uint16_t index;
+	uint32_t count_1ms;
+	uint8_t flag_1s;
+	uint8_t is_updating;
+
+	uint8_t uart_buf[256];
+	uint16_t uart_len;
+	uint8_t uart_flag;
 }var_t;
+
+extern var_t var;
 
 void app_init();
 void app_loop();
+void *memcpy(void* dest,void* source,unsigned int len);
 
 #endif

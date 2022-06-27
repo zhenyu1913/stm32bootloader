@@ -18,8 +18,10 @@ Core/Src/stm32g0xx_it.o: ../Core/Src/stm32g0xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_dmamux.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usart.h \
  ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_gpio.h \
- ../Core/Inc/stm32g0xx_it.h ../Core/Src/../Lib2/serial/serial_port.h \
- ../Core/Src/../Lib2/serial/../../Lib2/serial/serial.h
+ ../Core/Inc/stm32g0xx_it.h \
+ D:/yzy/workspace/bootloader/Core/Lib2/serial/serial_port.h \
+ D:/yzy/workspace/bootloader/Core/Lib2/serial/serial.h \
+ D:/yzy/workspace/bootloader/Core/Lib2/app/app.h
 ../Core/Inc/main.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_rcc.h:
 ../Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h:
@@ -41,5 +43,6 @@ Core/Src/stm32g0xx_it.o: ../Core/Src/stm32g0xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usart.h:
 ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_gpio.h:
 ../Core/Inc/stm32g0xx_it.h:
-../Core/Src/../Lib2/serial/serial_port.h:
-../Core/Src/../Lib2/serial/../../Lib2/serial/serial.h:
+D:/yzy/workspace/bootloader/Core/Lib2/serial/serial_port.h:
+D:/yzy/workspace/bootloader/Core/Lib2/serial/serial.h:
+D:/yzy/workspace/bootloader/Core/Lib2/app/app.h:

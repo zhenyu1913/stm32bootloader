@@ -1,7 +1,7 @@
 #ifndef SERIAL_PORT_H
 #define SERIAL_PORT_H
 
-#include "../../Lib2/serial/serial.h"
+#include "serial.h"
 
 extern serial_t* uart;
 

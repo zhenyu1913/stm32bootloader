@@ -21,7 +21,9 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Core/Lib2/STM32G0xx_HAL_Driver/Src \
 Core/Lib2/app \
+Core/Lib2/crc \
 Core/Lib2/serial \
 Core/Src \
 Core/Startup \

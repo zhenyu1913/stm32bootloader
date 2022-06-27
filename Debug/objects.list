@@ -1,4 +1,7 @@
+"./Core/Lib2/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash.o"
+"./Core/Lib2/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o"
 "./Core/Lib2/app/app.o"
+"./Core/Lib2/crc/crc.o"
 "./Core/Lib2/serial/serial.o"
 "./Core/Lib2/serial/serial_port.o"
 "./Core/Src/main.o"

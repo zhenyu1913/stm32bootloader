@@ -1,4 +1,4 @@
-#include "../../Lib2/serial/serial.h"
+#include "serial.h"
 
 #include "string.h"
 
